@@ -1,0 +1,105 @@
+.task-manager {
+  max-width: 600px; /*limited width on large screen */
+  margin: 0 auto; /*container -center */
+  padding: 20px; /* Internal spacing */
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+.task-form {
+  background: #f8eded;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space below the form */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 80px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  display: block; /* Makes it a block element */
+  margin: 0 auto; /* Auto margins center block elements */
+}
+
+.task-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-tasks-message {
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.task-content {
+  flex: 1;
+  min-width: 0; /* Important for text overflow */
+  overflow: hidden; /* Prevents text from pushing layout */
+
+  padding-right: 15px;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-content h3 {
+  margin: 0 0 5px 0;
+}
+
+.task-content p {
+  margin: 0;
+  color: #666;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  flex-shrink: 0; /* Prevents button from shrinking */
+}
